@@ -1,0 +1,49 @@
+{
+  "name": "@andrewthehan/ui-hooks",
+  "version": "0.0.4",
+  "description": "A collection of UI hooks.",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "npx babel index.ts --out-file build/index.js",
+    "prepare": "npm run build",
+    "clean": "rm -R build/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewthehan/ui-hooks.git"
+  },
+  "author": "Andrew Han",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrewthehan/ui-hooks/issues"
+  },
+  "homepage": "https://github.com/andrewthehan/ui-hooks#readme",
+  "dependencies": {
+    "@andrewthehan/math": "^0.0.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "core-js": "^3.21.1"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0 || ^17.0.0",
+    "react-dom": "^16.0.0 || ^17.0.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/env",
+        {
+          "useBuiltIns": "usage",
+          "corejs": 3
+        }
+      ],
+      "@babel/react",
+      "@babel/preset-typescript"
+    ]
+  }
+}
