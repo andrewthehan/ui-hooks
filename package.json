@@ -1,6 +1,6 @@
 {
   "name": "@andrewthehan/ui-hooks",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A collection of UI hooks.",
   "main": "build/index.js",
   "scripts": {
@@ -30,8 +30,8 @@
     "core-js": "^3.21.1"
   },
   "peerDependencies": {
-    "react": "^16.0.0 || ^17.0.0",
-    "react-dom": "^16.0.0 || ^17.0.0"
+    "react": "^16.0.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.0.0 || ^17.0.0 || ^18.0.0"
   },
   "babel": {
     "presets": [
